@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "serviceBus",
+      "name": "replicateFileInboundQueue",
+      "connection": "ServiceBusConnectionString",
+      "accessRights_": "Manage",
+      "direction": "out",
+      "queueName": "%ReplicateFileInboundQueueName%"
+    }
+  ],
+  "disabled": false
+}

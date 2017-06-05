@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "name": "replicateFileInboundQueue",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "%ReplicateFileInboundQueueName%",
+      "connection": "ServiceBusConnectionString",
+      "accessRights": "Manage"
+    }
+  ],
+  "disabled": false
+}

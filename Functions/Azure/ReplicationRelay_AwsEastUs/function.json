@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "name": "replicationCommand",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "%ReplicateFileOutboundTopicName%",
+      "subscriptionName": "ReplicationSubscription_AwsEastUs",
+      "connection": "ServiceBusConnectionString",
+      "accessRights": "Manage"
+    }
+  ],
+  "disabled": false
+}

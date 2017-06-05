@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  multicloudfilesharing.web:
+    image: multicloudfilesharing.web
+    build:
+      context: ./MultiCloudFileSharing.Web
+      dockerfile: Dockerfile

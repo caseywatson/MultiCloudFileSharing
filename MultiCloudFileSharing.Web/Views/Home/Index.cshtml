@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<MultiCloudFileSharing.Web.ViewModels.FileMetadataViewModel>
+
+<div style="margin-top: 20px; margin-bottom: 20px">
+    <form class="form-inline" method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="UploadFiles">
+        <div class="form-group">
+            <input type="file" class="form-control" name="files" multiple />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Upload files" />
+        </div>
+    </form>
+</div>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Source</th>
+    </tr>
+    @foreach (var fileMetadata in Model)
+    { 
+        <tr>
+            <td><a href="@fileMetadata.FileDownloadLink">@fileMetadata.FileName</a></td>
+            <td>@fileMetadata.FileId</td>
+            <td>@fileMetadata.FileSource</td>
+        </tr>
+    }
+</table>

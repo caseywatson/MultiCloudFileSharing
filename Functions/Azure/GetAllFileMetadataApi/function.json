@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "fileMetadata/all",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "type": "table",
+      "name": "fileMetadataTable",
+      "tableName": "%FileMetadataTableName%",
+      "partitionKey": "%FileMetadataPartitionKey%",
+      "take": 100,
+      "connection": "StorageConnectionString",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

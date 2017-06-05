@@ -1,0 +1,35 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "fileMetadata",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "fileMetadataTable",
+      "tableName": "%FileMetadataTableName%",
+      "connection": "StorageConnectionString",
+      "direction": "out"
+    },
+    {
+      "type": "serviceBus",
+      "name": "fileMetadataAddedQueue",
+      "connection": "ServiceBusConnectionString",
+      "accessRights_": "Manage",
+      "direction": "out",
+      "queueName": "%FileMetadataAddedQueueName%"
+    }
+  ],
+  "disabled": false
+}

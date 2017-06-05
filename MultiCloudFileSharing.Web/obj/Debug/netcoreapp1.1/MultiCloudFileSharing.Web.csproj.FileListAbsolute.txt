@@ -1,0 +1,9 @@
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\bin\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.deps.json
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\bin\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.runtimeconfig.json
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\bin\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.runtimeconfig.dev.json
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\bin\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.dll
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\bin\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.pdb
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\obj\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.AssemblyInfo.cs
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\obj\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.dll
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\obj\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.pdb
+C:\Users\cawatson\Documents\Visual Studio 2017\Projects\MultiCloudFileSharing\MultiCloudFileSharing.Web\obj\Debug\netcoreapp1.1\MultiCloudFileSharing.Web.csprojResolveAssemblyReference.cache

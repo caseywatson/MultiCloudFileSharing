@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "fileMetadataAdded",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "%FileMetadataAddedQueueName%",
+      "connection": "ServiceBusConnectionString",
+      "accessRights": "Manage"
+    },
+    {
+      "type": "serviceBus",
+      "name": "replicateFileOutboundTopic",
+      "topicName": "%ReplicateFileOutboundTopicName%",
+      "connection": "ServiceBusConnectionString",
+      "accessRights_": "Manage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
