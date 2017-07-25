@@ -1,3 +1,3 @@
-Documentation + Tutorial Coming Soon!
+This is the source code from Casey Watson's "Tale of Two Clouds" session including the back-end AWS Lambda and Azure Functions written in Node.js as well as the front-end ASP.NET Core web app.
 
-In the meantime, take a look at the [PowerPoint deck](https://github.com/caseywatson/MultiCloudFileSharing/raw/master/Tale%20of%20Two%20Clouds%20DTF.pptx).
+You can find the Powerpoint deck from this session at https://github.com/caseywatson/Decks/tree/master/Cloud%20SOLID.
