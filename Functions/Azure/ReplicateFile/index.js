@@ -1,6 +1,6 @@
-var azureStorage = require("azure-storage");
-var request = require("request");
-var util = require("util");
+const azureStorage = require("azure-storage");
+const request = require("request");
+const util = require("util");
 
 var getConfiguration = function(context) {
     var configuration = {

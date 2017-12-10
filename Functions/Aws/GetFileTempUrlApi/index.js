@@ -19,10 +19,12 @@ var getConfiguration = function() {
 exports.handler = (event, context, callback) => {
     var configuration = getConfiguration();
     
-    if (event.fileId) {
+    if (event.pathParameters && event.pathParameters.fileid) {
+        var fileId = event.pathParameters.fileid;
+
         s3.getSignedUrl("getObject", {
            Bucket: configuration.fileBucketName,
-           Key: event.fileId,
+           Key: fileId,
            Expires: (configuration.fileUrlExpirationMinutes * 60)
         }, function(error, url) {
            if (error) {
@@ -30,12 +32,20 @@ exports.handler = (event, context, callback) => {
            } else {
                console.log(util.format(
                    "File [%s] temporary URL is [%s].",
-                   event.fileId, url));
+                   fileId, url));
                
-               callback(null, url);
+               callback(null, {
+                   body: url,
+                   statusCode: "200",
+                   headers: {
+                       "Content-Type": "text/plain"
+                   }
+               });
            }
         });
     } else {
-        callback(null, "Bad Request 400: [fileId] is required.");
+        callback(null, {
+            statusCode: "400"
+        });
     }
 };

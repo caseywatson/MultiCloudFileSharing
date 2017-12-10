@@ -1,5 +1,5 @@
-var request = require("request");
-var util = require("util");
+const request = require("request");
+const util = require("util");
 
 var getConfiguration = function(context) {
     var configuration = {

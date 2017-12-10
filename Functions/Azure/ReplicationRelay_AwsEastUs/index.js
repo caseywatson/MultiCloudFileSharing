@@ -1,7 +1,7 @@
-var request = require("request");
-var util = require("util");
+const request = require("request");
+const util = require("util");
 
-var replicationTargetName = "AwsEastUs";
+const replicationTargetName = "AwsEastUs";
 
 var getConfiguration = function(context) {
     var configuration = {
